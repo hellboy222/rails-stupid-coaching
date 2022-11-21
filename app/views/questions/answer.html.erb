@@ -1,3 +1,29 @@
+<div>
+<figure class="bg-white p-3 rounded" style="border-left: .25rem solid #a34e78;">
+  <blockquote class="blockquote pb-2">
+    <p class="pb-2">
+      <%= @question %>
+    </p>
+  </blockquote>
+  <figcaption class="blockquote-footer mb-0">
+    You
+  </figcaption>
+</figure>
+  </div>
+<div>
+<figure class="bg-white p-3 rounded" style="border-left: .25rem solid #f68e9d;">
+  <blockquote class="blockquote pb-2">
+    <p class="pb-2">
+      <%= @answer %>
+    </p>
+  </blockquote>
+  <figcaption class="blockquote-footer mb-0">
+    Your coach
+  </figcaption>
+</figure>
+</div>
 
+<!--//Button to return to ask a question page-->
 
-<%= @answer %>
+<div class="text-center">
+  <%= link_to "Ask another question", ask_path, class: "btn btn-outline-primary" %>
